@@ -1,0 +1,56 @@
+@media screen and (max-width: 760px) {
+
+  .head-title-container {
+    max-width: 100%;
+    width: 100%;
+    font-size: small;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    padding: 20px 5px;
+    margin: 0;
+  }
+
+  .head-title-container h1 {
+    color: #a0ff98;
+    width: 100%;
+    font-size: 30px;
+    font-family: pixel-strong, sans-serif;
+    margin: 10px 0;
+    /* background-color: blue; */
+  }
+
+  .pixel-art {
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+    /* background-color: blue; */
+  }
+
+  .head-p-container p {
+    font-size: 15px;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+
+  .color-palette {
+    /* background-color: red; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-container h2 {
+    font-size: 16px;
+  }
+
+  .footer-container p {
+    font-size: 12px;
+  }
+}
