@@ -3,8 +3,8 @@ const pixelBoard = document.querySelector('#pixel-board');
 const inputSizeBoard = document.querySelector('#board-size');
 const buttonSizeBoard = document.querySelector('#generate-board');
 let getColor = 'black';
-let numberLines = 5;
-let numberElements = 5;
+let numberLines = 0;
+let numberElements = 0;
 
 // FUNCTION TO clear the board
 function clearBoard() {
@@ -25,6 +25,8 @@ createLine();
 function createElement(classList) {
   const elementPixel = document.createElement('div');
   elementPixel.classList = classList;
+  elementPixel.style.width = '40px';
+  elementPixel.style.height = '40px';
   return elementPixel;
 }
 
@@ -120,8 +122,27 @@ function paletteRandom() {
 }
 paletteRandom();
 
+function displayButtonClearBoard () {
+  const containerClearBoard = document.querySelector(".button");
+  
+  if(numberLines === 0 && numberElements === 0) {
+    containerClearBoard.style.display = "none";
+  } else {
+    containerClearBoard.style.display = "block";
+  }
+}
+displayButtonClearBoard();
+
+function randomColorsButton () {
+  const buttonRandomColors = document.querySelector(".random-colors-button");
+  buttonRandomColors.addEventListener("click", () => paletteRandom())
+}
+randomColorsButton();
+
 // EXECUTE MY ALL FUNCTIONS
 function executeAll() {
+  displayButtonClearBoard();
+  randomColorsButton();
   clearBoard();
   paletteRandom();
   createLine();
