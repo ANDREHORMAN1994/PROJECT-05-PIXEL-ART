@@ -33,7 +33,7 @@
 ## COMO BAIXAR O PROJETO:
 
 1. Clone o repositório:
-   - **`git clone git@github.com:ANDREHORMAN1994/PROJECT-05-MEME-GENERATOR.git`**
+   - **`git clone git@github.com:ANDREHORMAN1994/PROJECT-05-PIXEL-ART.git`**
 2. Entre na pasta do repositório que você acabou de clonar:
    - **`cd PROJECT-05-PIXEL-ART`**
      <br></br>
